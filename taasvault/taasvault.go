@@ -9,7 +9,7 @@ import (
 
 //const password string = "<PASSWORD>"
 
-func readData(VaultAddr, VaultToken, SecretPath string) (map[string]interface{}, error) {
+func ReadData(VaultAddr, VaultToken, SecretPath string) (map[string]interface{}, error) {
 
 	config := vault.DefaultConfig()
 	config.Address = VaultAddr
